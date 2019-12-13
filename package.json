@@ -1,0 +1,17 @@
+{
+  "name": "puppeteer-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "4.17.11",
+    "puppeteer": "1.19.0",
+    "superagent": "5.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test"
+  },
+  "author": "",
+  "license": "ISC"
+}
