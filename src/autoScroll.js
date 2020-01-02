@@ -2,7 +2,7 @@ async function autoScroll(page) {
   await page.evaluate(async () => {
     await new Promise((resolve, reject) => {
       let totalHeight = 0;
-      const scrollHeight = window.innerHeight * 0.7;
+      const scrollHeight = window.innerHeight * 0.9;
       const timer = setInterval(() => {
         const distance = 100 * Math.random();
         window.scrollBy({
@@ -19,10 +19,6 @@ async function autoScroll(page) {
           resolve();
         }
         if (totalHeight >= scrollHeight) {
-          window.scrollBy({
-            top: distance,
-            behavior: 'smooth'
-          });
           clearInterval(timer);
           resolve();
         }
