@@ -1,4 +1,4 @@
-const fs = require('fs-extra');
+const fs = require('fs');
 
 const fire = require('./common');
 const projectName = JSON.parse(fs.readFileSync('./package.json')).name;
